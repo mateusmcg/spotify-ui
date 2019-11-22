@@ -1,5 +1,6 @@
 <section>
-  <div *ngFor="let menuItem of menuItems" class="menu-item" [class.active]="menuItem.active">
+  <div *ngFor="let menuItem of menuItems" class="menu-item" [class.active]="menuItem.active"
+    (click)="selectMenuItem(menuItem)">
     <i class="material-icons">{{ menuItem.icon }}</i>
     <span>{{ menuItem.name }}</span>
   </div>

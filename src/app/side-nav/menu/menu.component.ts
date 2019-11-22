@@ -17,6 +17,11 @@ export class MenuComponent implements OnInit {
     this.buildMenuItems();
   }
 
+  public selectMenuItem(menuItem: MenuItem): void {
+    this.menuItems.forEach((item: MenuItem) => (item.active = false));
+    menuItem.active = true;
+  }
+
   private buildMenuItems(): void {
     this.menuItems = [
       {

@@ -5,9 +5,14 @@ section {
   background-color: rgba(0, 0, 0, 0.8);
   display: flex;
   flex-direction: column;
+  overflow: auto;
 
   spotify-logo {
     height: 3.9375rem;
     width: 100%;
+  }
+
+  spotify-playlist {
+    height: 100%;
   }
 }

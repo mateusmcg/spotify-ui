@@ -1,0 +1,12 @@
+<section>
+  <span>Playlists</span>
+  <div class="add">
+    <i class="material-icons">add_circle</i>
+    <span>Criar playlist</span>
+  </div>
+  <div class="list">
+    <span *ngFor="let playlist of playlists" (click)="selectPlaylist(playlist)" [class.active]="playlist.active">
+      {{ playlist.name }}
+    </span>
+  </div>
+</section>
