@@ -6,10 +6,26 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./configs.component.scss']
 })
 export class ConfigsComponent implements OnInit {
+  public volumeLevel = 50;
 
-  constructor() { }
+  private volumeLevelBeforeMute = this.volumeLevel;
 
-  ngOnInit() {
+  constructor() {}
+
+  public ngOnInit(): void {}
+
+  public onMute(): void {
+    if (this.volumeLevel === 0) {
+      this.volumeLevel = this.volumeLevelBeforeMute;
+
+      return;
+    }
+
+    this.volumeLevelBeforeMute = this.volumeLevel;
+    this.volumeLevel = 0;
   }
 
+  // public lessThan(left: number, right: number): boolean {
+  //   return left < right;
+  // }
 }

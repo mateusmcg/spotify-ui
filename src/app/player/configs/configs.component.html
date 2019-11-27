@@ -1,1 +1,11 @@
-<p>configs works!</p>
+<section>
+  <i class="material-icons" title="Fila">queue_music</i>
+  <i class="material-icons" title="Abrir mini player">devices_other</i>
+  <div class="volume-container">
+    <i class="material-icons" (click)="onMute()" *ngIf="volumeLevel === 0">volume_off</i>
+    <i class="material-icons" (click)="onMute()" *ngIf="volumeLevel > 0 && volumeLevel < 33">volume_mute</i>
+    <i class="material-icons" (click)="onMute()" *ngIf="volumeLevel >= 33 && volumeLevel < 66">volume_down</i>
+    <i class="material-icons" (click)="onMute()" *ngIf="volumeLevel >= 66">volume_up</i>
+    <input type="range" min="0" max="100" class="volume" [(ngModel)]="volumeLevel">
+  </div>
+</section>
