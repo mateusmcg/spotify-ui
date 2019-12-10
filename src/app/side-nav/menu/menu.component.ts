@@ -27,17 +27,20 @@ export class MenuComponent implements OnInit {
       {
         active: true,
         name: 'Início',
-        icon: 'home'
+        icon: 'home',
+        link: 'home'
       },
       {
         active: false,
         name: 'Buscar',
-        icon: 'search'
+        icon: 'search',
+        link: 'search'
       },
       {
         active: false,
         name: 'Sua Biblioteca',
-        icon: 'list'
+        icon: 'list',
+        link: 'library'
       }
     ];
   }

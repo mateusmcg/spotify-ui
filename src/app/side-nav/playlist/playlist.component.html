@@ -1,11 +1,16 @@
 <section>
   <span>Playlists</span>
-  <div class="add">
+  <div class="add" [routerLink]="'playlist'">
     <i class="material-icons">add_circle</i>
     <span>Criar playlist</span>
   </div>
   <div class="list">
-    <span *ngFor="let playlist of playlists" (click)="selectPlaylist(playlist)" [class.active]="playlist.active">
+    <span
+      *ngFor="let playlist of playlists"
+      (click)="selectPlaylist(playlist)"
+      [class.active]="playlist.active"
+      [routerLink]="['/playlist', playlist.id]"
+    >
       {{ playlist.name }}
     </span>
   </div>
