@@ -23,9 +23,8 @@ section {
   .actions {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     align-items: center;
-    height: 12rem;
+    height: 14rem;
     margin-bottom: 2rem;
 
     button {
@@ -33,6 +32,7 @@ section {
       color: $hover-color;
       width: 15rem;
       height: 2rem;
+      margin-bottom: 1.5rem;
       border-radius: 1.5rem;
       border: 1px solid $hover-color;
       background-color: $app-background;
