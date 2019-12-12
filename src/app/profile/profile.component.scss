@@ -1,0 +1,80 @@
+@import '../../assets/styles/variables.scss';
+
+section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  overflow: auto;
+
+  i {
+    font-size: 14rem;
+  }
+
+  span.user-name {
+    font-size: 2rem;
+    font-weight: bold;
+    color: $hover-color;
+    text-transform: capitalize;
+    margin-bottom: 3rem;
+  }
+
+  .actions {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 12rem;
+    margin-bottom: 2rem;
+
+    button {
+      text-transform: uppercase;
+      color: $hover-color;
+      width: 15rem;
+      height: 2rem;
+      border-radius: 1.5rem;
+      border: 1px solid $hover-color;
+      background-color: $app-background;
+      font-size: 0.75rem;
+      font-weight: bold;
+      letter-spacing: 0.125rem;
+
+      &:hover,
+      &:focus {
+        cursor: pointer;
+        width: 16rem;
+        font-size: 0.8rem;
+        border: 2px solid $hover-color;
+        outline: 0;
+      }
+
+      &:focus {
+        cursor: pointer;
+        width: 16rem;
+        font-size: 0.8rem;
+        border: 2px solid $app-gray;
+      }
+    }
+  }
+
+  .links {
+    display: flex;
+    flex-direction: row;
+    font-size: 0.75rem;
+
+    a {
+      padding: 0 0.5rem;
+      border-right: 2px solid;
+
+      &:last-child {
+        border-right: none;
+      }
+
+      &:hover {
+        cursor: pointer;
+        text-decoration: underline;
+      }
+    }
+  }
+}

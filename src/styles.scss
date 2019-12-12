@@ -17,6 +17,11 @@ body {
   font-size: 16px;
 }
 
+router-outlet + * {
+  height: 100%;
+  width: 100%;
+}
+
 /* width */
 ::-webkit-scrollbar {
   width: 1rem;
