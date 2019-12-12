@@ -7,7 +7,9 @@
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "deploy": "ng build --prod && npm run deploy-only",
+    "deploy-only": "aws s3 sync ./dist/spotify-ui s3://spotify-ui"
   },
   "private": true,
   "dependencies": {
