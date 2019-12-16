@@ -10,6 +10,7 @@ main {
     height: 100%;
     width: 100%;
     min-width: 45rem;
+    overflow: auto;
     align-items: flex-start;
 
     spotify-side-nav {

@@ -20,6 +20,8 @@ body {
 router-outlet + * {
   height: 100%;
   width: 100%;
+  overflow: auto;
+  padding: 1rem;
 }
 
 /* width */
