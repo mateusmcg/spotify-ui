@@ -11,6 +11,7 @@ const routes: Routes = [
     loadChildren: './playlist/playlist.module#PlaylistModule'
   },
   { path: 'profile', loadChildren: './profile/profile.module#ProfileModule' },
+  { path: 'install', loadChildren: './install/install.module#InstallModule' },
   { path: 'spotify-ui', redirectTo: '', pathMatch: 'full' },
   { path: '**', redirectTo: '', pathMatch: 'full' }
 ];

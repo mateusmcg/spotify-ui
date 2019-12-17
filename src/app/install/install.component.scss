@@ -1,0 +1,68 @@
+@import '../../assets/styles/variables.scss';
+
+section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100%;
+
+  span {
+    margin-top: 1.5rem;
+    text-align: center;
+  }
+
+  span.title {
+    font-size: 2.25rem;
+    font-weight: bold;
+    color: $hover-color;
+  }
+
+  span.sub-title {
+    font-size: 1.125rem;
+    font-weight: 500;
+    color: $hover-color;
+    letter-spacing: 0.0625rem;
+  }
+
+  .download-btn {
+    position: relative;
+    margin-top: 2rem;
+    width: 20rem;
+    height: 2.5rem;
+    background-color: #1db954;
+    color: $hover-color;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+    font-size: 0.7rem;
+    line-height: 2.5rem;
+    letter-spacing: 1px;
+    font-weight: bold;
+    vertical-align: middle;
+    border-radius: 25px;
+
+    &::after {
+      position: absolute;
+      top: -0.25rem;
+      left: -0.5rem;
+      color: $hover-color;
+      background-color: $app-active;
+      height: 3rem;
+      width: 21rem;
+      text-transform: uppercase;
+      text-decoration: none;
+      text-align: center;
+      font-size: 0.75rem;
+      line-height: 3rem;
+      letter-spacing: 1px;
+      font-weight: bold;
+      vertical-align: middle;
+      border-radius: 25px;
+    }
+
+    &:hover::after {
+      content: 'Baixar Aplicativo Para Desktop';
+    }
+  }
+}
