@@ -1,0 +1,50 @@
+section {
+  display: flex;
+  flex-direction: column;
+  width: 11.125rem;
+  height: 14.75rem;
+  padding: 1.25rem 1.25rem 1rem;
+  background-color: #282828;
+  border-radius: 0.5rem;
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  .card-img {
+    width: 8.625rem;
+    height: 8.625rem;
+    margin-bottom: 1rem;
+  }
+
+  .card-description {
+    height: 2.875rem;
+    display: flex;
+    flex-direction: column;
+
+    .card-title {
+      color: #fff;
+      font-size: 14px;
+      line-height: 20px;
+      font-weight: 700;
+      letter-spacing: 0.24px;
+      overflow: hidden;
+
+      &:hover {
+        cursor: pointer;
+        text-decoration: underline;
+      }
+    }
+
+    .card-subtitle {
+      color: #b3b3b3;
+      font-size: 12px;
+      line-height: 18px;
+      text-overflow: ellipsis;
+      padding: 0;
+      margin-top: 4px;
+      white-space: nowrap;
+      overflow: hidden;
+    }
+  }
+}
