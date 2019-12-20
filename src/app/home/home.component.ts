@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Content } from './content/content.model';
+import { HomeService } from './home.service';
 
 @Component({
   selector: 'spotify-home',
@@ -6,10 +8,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent implements OnInit {
+  public contents: Content[];
 
-  constructor() { }
+  constructor(private homeService: HomeService) {}
 
-  ngOnInit() {
+  public ngOnInit(): void {
+    this.contents = this.homeService.getContents();
   }
-
 }

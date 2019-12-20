@@ -1,4 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
+import { Card } from './card.model';
 
 @Component({
   selector: 'spotify-card',
@@ -7,10 +8,7 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class CardComponent implements OnInit {
   @Input()
-  public title: string;
-
-  @Input()
-  public subTitle: string;
+  public card: Card;
 
   constructor() {}
 

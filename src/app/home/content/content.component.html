@@ -1,0 +1,7 @@
+<section>
+  <span class="content-title">{{ content?.title }}</span>
+  <span class="content-subtitle" *ngIf="content?.subTitle">{{ content?.subTitle }}</span>
+  <div class="content-cards">
+    <spotify-card *ngFor="let card of content.cards" [card]="card"></spotify-card>
+  </div>
+</section>

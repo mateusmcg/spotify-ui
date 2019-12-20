@@ -1,0 +1,38 @@
+section {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2.25rem;
+
+  .content-title {
+    font-size: 28px;
+    line-height: 1.6;
+    font-weight: 600;
+    letter-spacing: -0.36px;
+    color: #fff;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+    &:hover {
+      text-decoration: underline;
+      cursor: pointer;
+    }
+  }
+
+  .content-subtitle {
+    font-size: 14px;
+    line-height: 1.6;
+    font-weight: 600;
+    letter-spacing: -0.36px;
+  }
+
+  .content-cards {
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+    margin: 1rem 0;
+
+    spotify-card {
+      margin: 0 0.5rem;
+    }
+  }
+}
