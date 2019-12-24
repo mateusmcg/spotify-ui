@@ -1,0 +1,9 @@
+<section class="card big" *ngIf="card.type === SearchCardType.BIG; else smallCard">
+  <span class="title">{{ card.title }}</span>
+</section>
+
+<ng-template #smallCard>
+  <section class="card small">
+    <span class="title">{{ card.title }}</span>
+  </section>
+</ng-template>

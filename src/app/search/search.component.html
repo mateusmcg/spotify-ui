@@ -1,1 +1,20 @@
-<p>search works!</p>
+<section>
+  <div class="search-input">
+    <i class="material-icons">search</i>
+    <input type="text" placeholder="Busque artistas, músicas ou podcasts" />
+  </div>
+
+  <div class="slider-content">
+    <h2 class="title">Seus gêneros favoritos</h2>
+    <div class="slider">
+      <spotify-search-card *ngFor="let card of slideCards" [card]="card"></spotify-search-card>
+    </div>
+  </div>
+
+  <div class="genres-content">
+    <h2 class="title">Navegar por todas as seções</h2>
+    <div class="genres">
+      <spotify-search-card *ngFor="let card of genreCards" [card]="card"></spotify-search-card>
+    </div>
+  </div>
+</section>
