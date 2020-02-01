@@ -2,6 +2,10 @@ pipeline {
     agent { docker { image 'node:6.3' } }
 
     stages {
+        stage('Init jenkins env'){
+            def dockerHome = tool 'jenkins-docker'
+            env.PATH = "${dockerHome}/bin:${env.PATH}"
+        }
         stage('Build') {
             steps {
                 sh 'npm run build-prod'
